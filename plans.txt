@@ -1,0 +1,35 @@
+AntSim
+-------
+A 2d hands-off ant colony simulator
+----------
+Ants:
+	id
+	hunger
+	health
+	sex 
+	color
+
+
+Ant types:
+Queen
+Worker  (female)
+Soldier (male)
+
+Environment:
+	hard dirt (no gravity)
+	soft dirt (moveable and affected by gravity)
+	grass
+		grows and is eaten by other bugs (eventually maybe)
+
+Marker/Pheremone
+	detected by ants, signal "food" or "danger"
+
+Bugs
+	Caterpillar
+		lots of hp
+		lots of food
+		slow
+	Aphid
+		fast
+		not much hp
+		not much food
