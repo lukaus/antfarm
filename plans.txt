@@ -33,3 +33,32 @@ Bugs
 		fast
 		not much hp
 		not much food
+    Spider
+        fast
+        medium hp
+        medium food
+        eats/kills ants, triggering defense pheremone burst
+
+
+Classes:
+    Entity
+        any aspect of simulation physically represented on screen
+        x
+        y
+        SFML entity
+        color
+        
+    GravityEntity
+        any entity that is affected by gravity
+        inherits from Entity, but has Update function that makes it fall
+    Environment
+        dirt, LooseDirt, Grass
+    Creature
+        anything with HP, hunger, and sex
+    
+    Ant, Caterpillar, etc
+        maybe sub classes for WorkerAnt, QueenAnt, etc    
+    
+
+
+        

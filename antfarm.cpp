@@ -114,26 +114,6 @@ int main(int argc, char* argv[])
 
         window.clear();
         sim.Draw(window);
-        /*
-        Node* cur = sim.list.head;
-        for(int i = 0; i < sim.list.count; i++)
-        {   
-            // Draw node's trail
-            Node * trailCur = cur->trailHead;
-            if(trailCur != nullptr)
-            {
-                for( int j = 0; j < cur->trailCount; j++)
-                {
-                    window.draw(*trailCur->pix);
-                    trailCur = trailCur->next;
-                }
-            }
-            // Then draw node itself
-            window.draw(*cur->pix);
-
-            cur = cur->next;
-        }      
-        */
         window.display();
     }
 
