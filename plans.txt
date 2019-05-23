@@ -59,6 +59,8 @@ Classes:
     Ant, Caterpillar, etc
         maybe sub classes for WorkerAnt, QueenAnt, etc    
     
-
-
-        
+Views:
+    Top-down view for watching the surface.
+    Cut away side view for watching ants underground, like through the window of an ant farm.
+    Side view should be movable in the x and y axis so you can only see a "slice" at a time.
+    See the game Sim-Ant for an example.
