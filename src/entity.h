@@ -1,12 +1,11 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 #include <string>
-#include "node.h"
 #include <SFML/System/Vector3.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 
-class Entity : public Node
+class Entity
 {
     
     public:
