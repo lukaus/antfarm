@@ -3,7 +3,6 @@
 #include <SFML/Graphics.hpp>
 #include "entity.h"
 #include "node.h"
-#include "simulation.h"
 
 using std::cout, std::cerr, std::endl;
 

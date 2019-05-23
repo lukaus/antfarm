@@ -1,7 +1,7 @@
 #ifndef SIMULATION_H
 #define SIMULATION_H
 
-#include "node.h"
+//#include "node.h"
 #include <string>
 #include "nodelist.h"
 #include <SFML/Graphics.hpp>

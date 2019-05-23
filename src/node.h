@@ -1,6 +1,5 @@
 #ifndef NODE_H
 #define NODE_H
-#include "simulation.h"
 #include "entity.h"
 #include <SFML/Graphics.hpp>
 
@@ -17,15 +16,16 @@ class Node
 
       Node();
 
-      void SetTrailColor(int r,int g, int b, int a=255);
+      //void SetTrailColor(int r,int g, int b, int a=255);
       void SetColor(int r,int g, int b, int a=255);
       void SetColor(sf::Color col);
       void SetPos(double long x, double long y);
       void Update(Simulation* sim);
-      void UpdatePos();
-      void UpdateTrail(Simulation* sim);
       void Status();
 
   private:
+      void UpdatePos();
+      //void UpdateTrail(Simulation* sim);
 };
+
 #endif

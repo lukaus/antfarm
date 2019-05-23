@@ -2,10 +2,10 @@
 #include "nodelist.h"
 #include <vector>
 
-Node NodeList::operator[](int idx)
+Node NodeList::operator[](int index)
 {
     Node * cur = head;
-    for(int i = 0; i < idx; i++)
+    for(int i = 0; i < index; i++)
     {
         cur = cur->next;
     }   

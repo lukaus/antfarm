@@ -1,8 +1,6 @@
 #include <cmath>
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "entity.h"
-#include "node.h"
 #include "simulation.h"
 #include <sys/stat.h>
 #include <string>
@@ -55,7 +53,7 @@ int main(int argc, char* argv[])
     sim.LoadSettings(settingsFilename);
     sim.LoadSave(saveFile);
 
-    sf::RenderWindow window(sf::VideoMode(sim.winX, sim.winY), std::string("AntFarm") + std::string(VERSION_STRING));
+    sf::RenderWindow window(sf::VideoMode(sim.winX, sim.winY), std::string("AntFarm ") + std::string(VERSION_STRING));
     window.setFramerateLimit(sim.ticksPerSecond);
 
     cerr << "Window is (" << sim.winX << ", " << sim.winY << ")\n";
