@@ -39,7 +39,6 @@ long double Simulation::y_part(long double angle, long double magnitude) // Get 
 void Simulation::Simulate()
 {
     tick++;
-    cout << "\n===============================\nt= " << tick << endl; 
     Node* cur = list.head;
     for(int i = 0; i < list.count; i++)
     {
