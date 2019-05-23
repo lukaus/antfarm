@@ -1,9 +1,9 @@
 #include <cmath>
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "src/entity.h"
-#include "src/node.h"
-#include "src/simulation.h"
+#include "entity.h"
+#include "node.h"
+#include "simulation.h"
 #include <sys/stat.h>
 
 using namespace std;
