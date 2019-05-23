@@ -1,20 +1,23 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 #include <string>
-//
-// Basic entity class
-
+#include <SFML/System/Vector3.hpp>
+#include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/RenderStates.hpp>
 
 class Entity
 {
-    private:
+    
     public:
-        std::string name;
-        double long x = 0;
-        double long y = 0;
+        std::string name = "<UNKNOWN>";
+        sf::Vector3f pos = {0,0,0};
 
-        Entity();
+        Entity() {};
+        virtual ~Entity() {};
+        virtual void Update() = 0;
+        virtual void Draw (sf::RenderTarget &target, sf::RenderStates states = sf::RenderStates::Default) = 0;
+        virtual void Status() = 0;
 
-    protected:
+    private:
 };
 #endif

@@ -1,6 +1,15 @@
 antfarm
 dbg-antfarm
 
+build/
+bin/
+include/
+lib/
+
+# VSCode specific
+*.code-workspace
+.vscode/
+
 # Prerequisites
 *.d
 
