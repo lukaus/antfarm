@@ -5,6 +5,9 @@
 #include "node.h"
 #include "simulation.h"
 #include <sys/stat.h>
+#include <string>
+
+#define VERSION_STRING "v0.1"
 
 using namespace std;
 
@@ -52,7 +55,7 @@ int main(int argc, char* argv[])
     sim.LoadSettings(settingsFilename);
     sim.LoadSave(saveFile);
 
-    sf::RenderWindow window(sf::VideoMode(sim.winX, sim.winY), "AntFarm v0.1");
+    sf::RenderWindow window(sf::VideoMode(sim.winX, sim.winY), std::string("AntFarm") + std::string(VERSION_STRING));
     window.setFramerateLimit(sim.ticksPerSecond);
 
     cerr << "Window is (" << sim.winX << ", " << sim.winY << ")\n";
