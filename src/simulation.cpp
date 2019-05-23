@@ -53,7 +53,7 @@ bool startsWith(string a, string b) // does a start with b
     if(a.length() < b.length())
         return false;
 
-    for(int i = 0; i < b.length(); i++)
+    for(long unsigned int i = 0; i < b.length(); i++)
         if(a[i] != b[i])
             return false;
 
@@ -95,7 +95,8 @@ void Simulation::LoadSettings(string filename)
 
 void Simulation::Draw(sf::RenderWindow& window)
 {
-
+    window.clear(sf::Color::Black);
+    window.display();
 }
 
 

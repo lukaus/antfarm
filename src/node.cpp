@@ -37,10 +37,12 @@ void Node::SetPos(double long x, double long y)
     }
     pix->setPosition(sf::Vector2f((float)x,(float)y));
 }
+
 void Node::Update(Simulation* sim)
 {
     this->UpdatePos();
 }
+
 void Node::UpdatePos()
 {
 
